@@ -8,6 +8,7 @@
       <mu-tab title="DARK" value="dark"/>
       <mu-tab title="CARBON" value="carbon"/>
       <mu-tab title="TEAL" value="teal"/>
+      <mu-tab title="E" value="ene"/>
     </mu-tabs>
     <mu-row>
       <mu-col class="demo-theme-group" width="100" desktop="33" tablet="33">
@@ -101,6 +102,7 @@ import light from 'raw!less!../../assets/themes/theme-light.less'
 import dark from 'raw!less!../../assets/themes/theme-dark.less'
 import carbon from 'raw!less!../../assets/themes/theme-carbon.less'
 import teal from 'raw!less!../../assets/themes/theme-teal.less'
+import ene from 'raw!less!../../assets/themes/theme-ene.less'
 import zh from './zh'
 import en from './en'
 
@@ -109,6 +111,7 @@ const themes = {
   dark,
   carbon,
   teal,
+  ene,
   default: _default
 }
 let theme = 'default'
