@@ -44,8 +44,7 @@ export default {
     focus: 'when the input box is focusing, component will emit this event',
     blur: 'when the input box is bluring, component will emit thisevent',
     input: 'when the value is changed, the component will emit this event with the new value',
-    change: 'when the user input, the component will emit this event with the new value',
-    keyup: 'when the user releases a key while entering value, the component will emit this event'
+    change: 'when the user input, the component will emit this event with the new value'
   },
   slots: {
     default: 'is used to coordinate with other components, can retain the style of input box, and the form component use other components internal, `selectField` `datePicer` `timePicker` are all use this way'

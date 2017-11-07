@@ -6,7 +6,7 @@
       <text-field-hint v-if="hintText" :text="hintText" :show="showHint" :class="hintTextClass"></text-field-hint>
       <slot>
         <input v-if="!multiLine" ref="input" :name="name" :type="type" :value="inputValue"
-          :disabled="disabled" @change="handleChange" @focus="handleFocus" @input="handleInput" @keyup="handleKeyup" @blur="handleBlur"
+          :disabled="disabled" @change="handleChange" @focus="handleFocus" @input="handleInput" @blur="handleBlur"
           :max="max" :min="min" class="mu-text-field-input" :class="inputClass" :required="required">
         <enhanced-textarea :name="name" v-if="multiLine" ref="textarea" :normalClass="inputClass":value="inputValue" :disabled="disabled" :rows="rows" :rowsMax="rowsMax" @change="handleChange" @input="handleInput" @focus="handleFocus" @blur="handleBlur"></enhanced-textarea>
       </slot>
@@ -171,9 +171,6 @@ export default {
     },
     handleInput (val) {
       this.inputValue = val.target ? val.target.value : val
-    },
-    handleKeyup (e) {
-      this.$emit('keyup', e, e.target.value)
     },
     handleChange (e) {
       this.$emit('change', e, e.target.value)

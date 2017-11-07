@@ -44,8 +44,7 @@ export default {
     focus: '输入框获取焦点时触发',
     blur: '输入框失去焦点时触发',
     input: 'value 发生改变触发的事件，传入新的value, (value)',
-    change: '用户输入时触发事件，传入输入框的 value',
-    keyup: 'when the user releases a key while entering value, the component will emit this event'
+    change: '用户输入时触发事件，传入输入框的 value'
   },
   slots: {
     default: '用于和其它组件配合使用，可以保留输入框的样式，但内部表单组件可以放置其它的组件，现在的 `selectField` `datePicer` `timePicker` 都是这种方式'
