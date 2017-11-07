@@ -152,6 +152,9 @@ export default {
   }, {
     name: 'change',
     desc: 'events.change'
+  }, {
+    name: 'keyup',
+    desc: 'events.keyup'
   }],
   slots: [{
     name: 'default',
